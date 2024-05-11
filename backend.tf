@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = var.projectName
+    bucket = "tech-challenge-fast-food-cluster"
     key    = "terraform.tfstate"
-    region = var.region
+    region = "us-east-1"
   }
 }
