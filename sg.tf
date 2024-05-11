@@ -1,6 +1,6 @@
 resource "aws_security_group" "sg" {
-  name        = "SG-${var.projectName}"
-  vpc_id      = var.vpcId
+  name   = "SG-${var.projectName}"
+  vpc_id = var.vpcId
 
   ingress {
     description = "All"
