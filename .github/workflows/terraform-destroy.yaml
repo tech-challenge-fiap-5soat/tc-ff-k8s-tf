@@ -21,8 +21,9 @@ jobs:
         with:
           terraform_version: 1.8.3
 
-      - name: Terraform Init
-        run: terraform init
+      - name: Show Destroy plan
+        run: terraform plan -destroy
+        continue-on-error: true
 
       - name: Terraform Destroy
         run: terraform destroy -auto-approve
