@@ -7,7 +7,7 @@ variable "labRole" {
 }
 
 variable "projectName" {
-  default = "app"
+  default = "tech-challenge-fast-food-cluster"
 }
 
 variable "subnetA" {
